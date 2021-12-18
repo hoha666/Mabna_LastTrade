@@ -1,0 +1,13 @@
+﻿using MabnaLibrary;
+
+/// <summary>
+/// Adding procedure to DB and then calling it
+/// this is one of the fastest ways
+/// </summary>
+await DbContext.CreateProcedure();
+DbContext.CallProcedure("LastTradeProc");
+
+Console.Clear();
+Console.WriteLine("LastTrade Created !!!");
+
+await JsonUtil.GetAsync(null, new CancellationToken());
