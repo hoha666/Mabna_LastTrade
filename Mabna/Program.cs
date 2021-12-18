@@ -11,3 +11,4 @@ Console.Clear();
 Console.WriteLine("LastTrade Created !!!");
 
 await JsonUtil.GetAsync(null, new CancellationToken());
+Console.WriteLine("LastTrade JSON File Created Too --> C:\\temp\\LastTrade.txt");
